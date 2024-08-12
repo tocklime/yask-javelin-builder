@@ -39,11 +39,15 @@
         env = {
           PICO_SDK_PATH = "${local-pico-sdk}/lib/pico-sdk";
         };
+        postUnpack = ''
+          cp -r "${javelin}" source/javelin
+          cp "${my_yask_file}" source/config/yask.h
+          chmod a+w source/javelin
+        '';
         configurePhase = ''
-          ln -s "${javelin}" javelin
-          cp "${my_yask_file}" config/yask.h
           cmake -DJAVELIN_BOARD=yask
         '';
+        patches = [ ./0001_uk_keyboard.patch ];
         installPhase = ''
           mkdir $out
           mv javelin-steno-rp2040.uf2 $out
