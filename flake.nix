@@ -30,6 +30,7 @@
         };
       });
       deps = with pkgs; [ cmake gcc-arm-embedded local-pico-sdk python3];
+      my_yask_file = ./yask.h;
     in rec { 
       packages.default = pkgs.stdenv.mkDerivation {
         name = "javelin-rp2040";
@@ -40,7 +41,8 @@
         };
         configurePhase = ''
           ln -s "${javelin}" javelin
-          cmake -DJAVELIN_BOARD=uni_v4
+          cp "${my_yask_file}" config/yask.h
+          cmake -DJAVELIN_BOARD=yask
         '';
         installPhase = ''
           mkdir $out
