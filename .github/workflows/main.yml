@@ -12,9 +12,7 @@ jobs:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
     - run: nix build
     - run: nix flake check
-    - run: pwd
-    - run: ls -lR
     - uses: actions/upload-artifact@v4
       with:
         name: yask UF2
-        path: results/javelin-steno-rp2040.uf2
+        path: result/javelin-steno-rp2040.uf2
