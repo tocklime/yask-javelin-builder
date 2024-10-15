@@ -47,7 +47,7 @@
         configurePhase = ''
           cmake -DJAVELIN_BOARD=yask
         '';
-        patches = [ ./0001_uk_keyboard.patch ];
+        #patches = [ ./0001_uk_keyboard.patch ];
         installPhase = ''
           mkdir $out
           mv javelin-steno-rp2040.uf2 $out
