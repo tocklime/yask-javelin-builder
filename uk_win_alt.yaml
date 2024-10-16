@@ -1,0 +1,965 @@
+# Mapping for US keyboards without support for non-ascii input.
+name: UK
+identifier: uk-win-alt
+unicode: none
+keyCodes:
+  # Number row
+  "`": 0x35
+  "1": 0x1e
+  "!":
+    modifiers: shift
+    scanCode: 0x1e
+  "2": 0x1f
+  "\"":
+    modifiers: shift
+    scanCode: 0x1f
+  "3": 0x20
+  "£":
+    modifiers: shift
+    scanCode: 0x20
+  "4": 0x21
+  "$":
+    modifiers: shift
+    scanCode: 0x21
+  "5": 0x22
+  "%":
+    modifiers: shift
+    scanCode: 0x22
+  "6": 0x23
+  "^":
+    modifiers: shift
+    scanCode: 0x23
+  "7": 0x24
+  "&":
+    modifiers: shift
+    scanCode: 0x24
+  "8": 0x25
+  "*":
+    modifiers: shift
+    scanCode: 0x25
+  "9": 0x26
+  "(":
+    modifiers: shift
+    scanCode: 0x26
+  "0": 0x27
+  ")":
+    modifiers: shift
+    scanCode: 0x27
+  "-": 0x2d
+  "_":
+    modifiers: shift
+    scanCode: 0x2d
+  "=": 0x2e
+  "+":
+    modifiers: shift
+    scanCode: 0x2e
+  "\b": 0x2a
+
+  # Top letter row
+  "\t": 0x2b
+  "q": 0x14
+  "Q":
+    modifiers: shift
+    scanCode: 0x14
+  "w": 0x1a
+  "W":
+    modifiers: shift
+    scanCode: 0x1a
+  "e": 0x08
+  "E":
+    modifiers: shift
+    scanCode: 0x8
+  "r": 0x15
+  "R":
+    modifiers: shift
+    scanCode: 0x15
+  "t": 0x17
+  "T":
+    modifiers: shift
+    scanCode: 0x17
+  "y": 0x1c
+  "Y":
+    modifiers: shift
+    scanCode: 0x1c
+  "u": 0x18
+  "U":
+    modifiers: shift
+    scanCode: 0x18
+  "i": 0x0c
+  "I":
+    modifiers: shift
+    scanCode: 0x0c
+  "o": 0x12
+  "O":
+    modifiers: shift
+    scanCode: 0x12
+  "p": 0x13
+  "P":
+    modifiers: shift
+    scanCode: 0x13
+  "[": 0x2f
+  "{":
+    modifiers: shift
+    scanCode: 0x2f
+  "]": 0x30
+  "}":
+    modifiers: shift
+    scanCode: 0x30
+
+  # Middle letter row
+  "a": 0x04
+  "A":
+    modifiers: shift
+    scanCode: 0x04
+  "s": 0x16
+  "S":
+    modifiers: shift
+    scanCode: 0x16
+  "d": 0x07
+  "D":
+    modifiers: shift
+    scanCode: 0x07
+  "f": 0x09
+  "F":
+    modifiers: shift
+    scanCode: 0x09
+  "g": 0x0a
+  "G":
+    modifiers: shift
+    scanCode: 0x0a
+  "h": 0x0b
+  "H":
+    modifiers: shift
+    scanCode: 0x0b
+  "j": 0x0d
+  "J":
+    modifiers: shift
+    scanCode: 0x0d
+  "k": 0x0e
+  "K":
+    modifiers: shift
+    scanCode: 0x0e
+  "l": 0x0f
+  "L":
+    modifiers: shift
+    scanCode: 0x0f
+  ";": 0x33
+  ":":
+    modifiers: shift
+    scanCode: 0x33
+  "'": 0x34
+  "@":
+    modifiers: shift
+    scanCode: 0x34
+  "#": 0x32
+  "~":
+    modifiers: shift
+    scanCode: 0x32
+
+  "\n": 0x28
+
+  # Lower letter row
+  "\\": 0x64
+  "|":
+    modifiers: shift
+    scanCode: 0x64
+  "z": 0x1d
+  "Z":
+    modifiers: shift
+    scanCode: 0x1d
+  "x": 0x1b
+  "X":
+    modifiers: shift
+    scanCode: 0x1b
+  "c": 0x06
+  "C":
+    modifiers: shift
+    scanCode: 0x06
+  "v": 0x19
+  "V":
+    modifiers: shift
+    scanCode: 0x19
+  "b": 0x05
+  "B":
+    modifiers: shift
+    scanCode: 0x05
+  "n": 0x11
+  "N":
+    modifiers: shift
+    scanCode: 0x11
+  "m": 0x10
+  "M":
+    modifiers: shift
+    scanCode: 0x10
+  ",": 0x36
+  "<":
+    modifiers: shift
+    scanCode: 0x36
+  ".": 0x37
+  ">":
+    modifiers: shift
+    scanCode: 0x37
+  "/": 0x38
+  "?":
+    modifiers: shift
+    scanCode: 0x38
+
+  # Space bar
+  " ": 0x2c
+
+  # Windows alt codes
+  " ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "¡":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "¢":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "¥":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "§":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "ª":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "«":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "¬":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "°":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "±":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "²":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "µ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "¶":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "·":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "º":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "»":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "¼":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "½":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "¿":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "Á":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "Ä":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "Å":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "Æ":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "Ç":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "É":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "Ñ":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "Ö":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "Ü":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "ß":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "à":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "á":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "â":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "ä":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "å":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "æ":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "ç":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "è":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "é":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "ê":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "ë":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "ì":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "í":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "î":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "ï":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "ñ":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "ò":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "ó":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "ô":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "ö":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "÷":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "ù":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "ú":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "û":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "ü":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "ÿ":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "ƒ":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "Γ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "Θ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "Σ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "Φ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "Ω":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "α":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "δ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "ε":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "π":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "σ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "τ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "φ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "•":
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "‼":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "ⁿ":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "₧":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "←":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "↑":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "→":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "↓":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "↔":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "↕":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "↨":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "∙":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "√":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "∞":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "∟":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "∩":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "≈":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "≡":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "≤":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "≥":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "⌂":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "⌐":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "⌠":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "⌡":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "─":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "│":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "┌":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "┐":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "└":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "┘":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "├":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "┤":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "┬":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "┴":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "┼":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "═":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "║":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "╒":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "╓":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "╔":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "╕":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "╖":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "╗":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "╘":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "╙":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "╚":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "╛":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "╜":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "╝":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "╞":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "╟":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "╠":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "╢":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "╣":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "╤":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "╥":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "╦":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "╧":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "╨":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "╩":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "╪":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "╫":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "╬":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "▀":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "▄":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "█":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "▌":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "▐":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "░":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "▒":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "▓":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "■":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "▬":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "▲":
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "►":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "▼":
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "◄":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 95, modifiers: alt}
+  - {scanCode: 0}
+  "○":
+  - {scanCode: 97, modifiers: alt}
+  - {scanCode: 0}
+  "◘":
+  - {scanCode: 96, modifiers: alt}
+  - {scanCode: 0}
+  "◙":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 98, modifiers: alt}
+  - {scanCode: 0}
+  "☺":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "☻":
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "☼":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "♀":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 90, modifiers: alt}
+  - {scanCode: 0}
+  "♂":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 0}
+  "♠":
+  - {scanCode: 94, modifiers: alt}
+  - {scanCode: 0}
+  "♣":
+  - {scanCode: 93, modifiers: alt}
+  - {scanCode: 0}
+  "♥":
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "♦":
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
+  "♪":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 91, modifiers: alt}
+  - {scanCode: 0}
+  "♫":
+  - {scanCode: 89, modifiers: alt}
+  - {scanCode: 92, modifiers: alt}
+  - {scanCode: 0}
