@@ -32,7 +32,7 @@ The firmware builder has a lot of options that can't be controlled from script, 
 * Check All the built in ones
 
 * Upload the dictionaries from https://github.com/tocklime/plover_dictionaries : 
-  * [x] jeff-numbers
+  * [ ] jeff-numbers
   * [x] jeff-show-stroke
   * [x] user.json - be sure to promote anything in the onboard ram of the to-be-overwritten firmware.
   * [ ] jeff-phrasing
