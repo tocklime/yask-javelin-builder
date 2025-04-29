@@ -21,7 +21,7 @@
         inherit system;
       };
       pico-sdk-subs = pkgs.pico-sdk.tests.withSubmodules;
-      deps = with pkgs; [ cmake gcc-arm-embedded pico-sdk-subs python3 picotool ];
+      deps = with pkgs; [ cmake gcc-arm-embedded pico-sdk-subs python3 picotool elf2uf2-rs ];
       my_yask_file = ./yask.h;
     in rec { 
       packages.default = pkgs.stdenv.mkDerivation {
@@ -43,7 +43,7 @@
         #patches = [ ./0001_uk_keyboard.patch ];
         installPhase = ''
           mkdir $out
-          mv javelin-steno-pico.elf $out
+          elf2uf2-rs javelin-steno-pico.elf $out/javelin-steno-pico.uf2
         '';
       };
       devShells.default = pkgs.mkShell {
