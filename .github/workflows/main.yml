@@ -15,4 +15,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: yask UF2
-        path: result/javelin-steno-rp2040.uf2
+        path: result/javelin-steno-pico.elf

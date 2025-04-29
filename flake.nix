@@ -20,16 +20,8 @@
       pkgs = import nixpkgs {
         inherit system;
       };
-      local-pico-sdk = pkgs.pico-sdk.overrideDerivation (oldAttrs: {
-        src = pkgs.fetchFromGitHub {
-          owner = "raspberrypi";
-          repo = "pico-sdk";
-          rev = "1.5.1";
-          fetchSubmodules = true;
-          hash = "sha256-GY5jjJzaENL3ftuU5KpEZAmEZgyFRtLwGVg3W1e/4Ho=";
-        };
-      });
-      deps = with pkgs; [ cmake gcc-arm-embedded local-pico-sdk python3];
+      pico-sdk-subs = pkgs.pico-sdk.tests.withSubmodules;
+      deps = with pkgs; [ cmake gcc-arm-embedded pico-sdk-subs python3 picotool ];
       my_yask_file = ./yask.h;
     in rec { 
       packages.default = pkgs.stdenv.mkDerivation {
@@ -37,7 +29,8 @@
         src = javelin-rp2040;
         nativeBuildInputs = deps;
         env = {
-          PICO_SDK_PATH = "${local-pico-sdk}/lib/pico-sdk";
+          PICO_SDK_PATH = "${pico-sdk-subs}/lib/pico-sdk";
+          PICO_TOOLCHAIN_PATH = "${pkgs.gcc-arm-embedded}";
         };
         postUnpack = ''
           cp -r "${javelin}" source/javelin
@@ -50,13 +43,14 @@
         #patches = [ ./0001_uk_keyboard.patch ];
         installPhase = ''
           mkdir $out
-          mv javelin-steno-rp2040.uf2 $out
+          mv javelin-steno-pico.elf $out
         '';
       };
       devShells.default = pkgs.mkShell {
         buildInputs = deps;
         env = {
-          PICO_SDK_PATH = "${local-pico-sdk}/lib/pico-sdk";
+          PICO_SDK_PATH = "${pico-sdk-subs}/lib/pico-sdk";
+          PICO_TOOLCHAIN_PATH = "${pkgs.gcc-arm-embedded}";
           JAVELIN = "${javelin}";
           JAVELIN_RP2040 = "${javelin-rp2040}";
         };
