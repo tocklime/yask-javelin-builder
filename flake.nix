@@ -34,11 +34,14 @@
         };
         postUnpack = ''
           cp -r "${javelin}" source/javelin
+          ln -s source/javelin javelin-steno
           cp "${my_yask_file}" source/config/yask.h
           chmod a+w source/javelin
         '';
         configurePhase = ''
-          cmake -DJAVELIN_BOARD=yask
+          mkdir build
+          cd build
+          cmake .. -D JAVELIN_BOARD=yask
         '';
         #patches = [ ./0001_uk_keyboard.patch ];
         installPhase = ''
