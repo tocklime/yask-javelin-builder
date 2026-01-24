@@ -8,7 +8,7 @@ The firmware builder has a lot of options that can't be controlled from script, 
 
 ## Hardware
 
-* Select your hardware: Starboard
+* Select your hardware: Starboard, 16MB rp2040
 * [x] Show expert options
 
 ## Keyboard Emulation
@@ -18,6 +18,7 @@ The firmware builder has a lot of options that can't be controlled from script, 
 ### Host layout list
 
 * Upload the 3 yaml files from this project (`uk_{ibus,win_alt,win_hex}.yaml`).
+  * Just tried doing the now built-in 'UK (uk)'
 * Keyboard Protocol: default
 
 ## Options
@@ -54,6 +55,17 @@ The firmware builder has a lot of options that can't be controlled from script, 
 
 Load `layout-script.javelin-script` from this directory.
 
-## Orthograpy
+## System
 
-Use `american_english_words.txt` and `english-orthography.json` from this dir.
+System file from https://github.com/jthlim/javelin-system/blob/main/english-plover.yaml
+
+Word list file from https://github.com/opensteno/plover/blob/main/plover/assets/american_english_words.txt
+
+~~Use `american_english_words.txt` and `english-orthography.json` from this dir.~~
+
+# Flashing
+
+Click create firmware. You'll get a starboard_rp2040*.uf2 file.
+
+Flash that to the board: Hold down bootsel and press reset. Copy the file to the mounted drive.
+Then flash the javelin-steno-pico.uf2 from this project.
